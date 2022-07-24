@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Module_2_Lesson_5_hw_2</string>
+
+    <string name="title_main_news">Audi and Moto List :)</string>
+
+    <string name="news_title_1">Audi A3 First Generation</string>
+    <string name="news_description_1">The original A3 (or Type 8L) was announced back in June 1995,
+        but introduced first in the European market for more than year in September 1996, marking
+        Audi\'s return to the production of smaller cars following the demise of the Audi 50 in
+        1978. This was the first Volkswagen Group model to use the "PQ34" or "A4" platform,
+        bearing a close resemblance to the contemporary Volkswagen Golf Mk4, which arrived a year
+        later. Within three years, this platform was used for total of seven cars.The A3 was
+        initially available only with a three-door hatchback body, to present a more sporty image
+        than the Golf, in both front and four-wheel drive. The inline four-cylinder engines were
+        transversely mounted. The Audi A3 was the eighth model in the Audi lineup to use five
+        valves per cylinder.</string>
+    <string name="news_title_2">Audi A3 Second Generation</string>
+    <string name="news_description_2">At the 2003 Geneva Motor Show, Audi launched the second
+        generation of the A3, the Typ 8P, designed by Gary Telaak during 2000 (however, the final
+        design was frozen in 2001). Originally launched only as a three-door hatchback with
+        four-cylinder engines, it featured a new automobile platform (the PQ35 platform), a
+        redesigned and more spacious interior, new petrol engines with Fuel Stratified Injection
+        (FSI), and standard six-speed manual gearboxes (except on the base 1.6). In mid-2003 the
+        line was updated with two sports-oriented models, a 2.0 Turbo-FSI version rated 200 PS
+        (147 kW; 197 hp), and a 3.2 L VR6 engine (for the first time) with 250 PS (184 kW; 247 hp).
+        Haldex Traction-based quattro on-demand four-wheel drive, and the S-Tronic semi-auto
+        gearbox were introduced as options (quattro is standard on the VR6) on models with engines
+        over 140 PS (103 kW; 138 hp). In 2005 the "S line" trim level, offering new decorative
+        elements, became available and the three-door A3 received the same front-end styling
+        features as the Sportback model. For the first time, the A3 became available in the
+        North American market, exclusively with the Sportback body, with the base 2.0 inline-four
+        FSI introduced in 2005 as a 2006 model, and the 3.2 VR6 Quattro following.</string>
+    <string name="news_title_3">Audi A3 Third Generation</string>
+    <string name="news_description_3">The vehicle was unveiled at the 2012 Geneva Motor Show and
+        went on sale in Europe in September 2012. First vehicle using the flexible modular
+        Volkswagen Group MQB platform, the third generation is available as a three-door hatchback,
+        a five-door "Sportback", a four-door saloon to directly rival the Mercedes-Benz CLA-Class,
+        and a two-door Cabriolet. The front suspension is a MacPherson strut set-up while the rear
+        utilizes torsion bar suspension (models with less than 150 PS) or multi-link rear
+        suspension (models with 150 PS or more).</string>
+
+    <string name="news_title_4">Audi A3 Fourth Generation</string>
+    <string name="news_description_4">The new A3 was unveiled online in 2020. The new interior
+        and exterior styling is heavily inspired by Lamborghini, LED headlights and taillights,
+        with the option of Matrix and Laser LED headlights. It shares the MQB evo platform with
+        other Audi models, and with the Volkswagen Golf Mk8, SEAT Leon Mk4, and Škoda Octavia Mk4.
+        It is 3 centimetres longer and wider when compared to the outgoing model while keeping the
+        wheelbase length the same, trunk cargo space is 380 litres with the seats up, and 1200
+        litres with the seats folded down. It has a drag coefficient of 0.28, and is powered by
+        1.0-liter 3-cylinder gasoline turbocharged engine with 110 hp, 1.5-litre with 150 hp,
+        2.0-liter TDI with 116 hp or 150 hp. There is also a new 2.0-liter Quattro version in both
+        gasoline and diesel variants. It produces 190 hp (142 kW) and 320 N⋅m (236 lbf⋅ft) of
+        torque (400 Nm for the diesel variant). It also has reduced cargo space (320 litres
+        instead of the 380 litres in the other A3 variants) due to the Quattro four-wheel-drive
+        system.</string>
+
+    <string name="news_title_5">Audi S3 First Generation</string>
+    <string name="news_description_5">Audi released the A3-derived Audi S3 in 1999, only as a
+        three-door hatchback. The inline-four 20v 1.8 L turbocharged petrol engine came in two
+        versions: 210 PS (154 kW; 207 hp) and 225 PS (165 kW; 222 hp). Early models (1999–2001)
+        had 210 PS (154 kW; 207 hp). Later models (2001–2003) had variable valve timing and 225 PS
+        (165 kW; 222 hp). The engine had a maximum of 280 N⋅m (210 ft⋅lbf) torque. This was the
+        first time a small four-cylinder engine had been used in an Audi S-series car.</string>
+
+    <string name="news_title_6">Audi S3 Second Generation</string>
+    <string name="news_description_6">In August 2006, Audi introduced the second generation S3.
+        Offered in three- and five-door body styles, the second generation—Typ 8P—S3 is powered
+        by a modified and uprated Volkswagen Group-sourced 2.0-litre turbocharged FSI petrol
+        engine, with a maximum output of 195 kW (265 PS; 261 bhp). As with all Audi S models,
+        the design was done in-house by quattro GmbH. The engine features uprated high-performance
+        pistons, revised boost/fuel mapping, increased turbocharger size (KKK K04) and larger
+        intercooler. The most powerful form of this engine, and quattro four-wheel drive, makes
+        for a 0–100 km/h (0–62 mph) time of 5.5 seconds, and an electronically limited top speed
+        of 250 km/h (155 mph). Audi offers both six-speed manual and six-speed S-Tronic automatic
+        transmissions with the S3. The spring ratings and dampers were revised, along with the
+        body kit. Like its predecessor, although badged a "Quattro" model, the S3 does not employ
+        a Torsen centre differential (as in other common Quattro models), but instead uses the
+        Swedish Haldex Traction system in its on-demand four-wheel drive transmission, due to the
+        transverse engine layout.</string>
+
+    <string name="news_title_7">Audi S3 Third Generation</string>
+    <string name="news_description_7">The third generation Audi S3 is powered by a 2.0 L; 121.1
+        cu in (1,984 cc) TFSI (turbo gasoline direct injection) inline-four engine, with an output
+        of 221 kW (300 PS; 296 bhp) at 5,500 rpm and 380 N⋅m (280 lbf⋅ft) of torque at 1,800-5,500
+        rpm, with its redline at 6,800 rpm. It features new pistons with stronger bolts and
+        new rings, as well as reinforced connecting rods with new mounts transferring the power
+        to the crankshaft. The cylinder head is made of a new lightweight aluminium alloy designed
+        with high strength and temperature resistance in mind. It has a combined fuel economy of
+        23 mpg‑US (10 L/100 km; 28 mpg‑imp) manual; and 24 mpg‑US (9.8 L/100 km; 29 mpg‑imp) with
+        S tronic. The engine weighs in at 148 kg (326 lb), 5 kg (11 lb) lighter than the previous
+        generation. The S3 is capable of 0–100 km/h (62 mph) in 4.8-5.2 seconds and has an
+        electronically limited top speed of 155 mph (249 km/h).</string>
+
+    <string name="news_title_8">Audi S3 Fourth Generation</string>
+    <string name="news_description_8">The S3 model has the same 2.0L petrol engine from the
+        previous generation, producing 310 hp (231 kW) and 400 N⋅m (295 lbf⋅ft) of torque, but
+        this time is only available with an automatic gearbox. Similarly it has reduced cargo
+        space due to the Quattro four-wheel-drive system. Like the previous generation, the new
+        S3 also comes as a saloon/sedan.</string>
+
+    <string name="news_title_9">Audi RS 3 Sportback (2011–2012)</string>
+    <string name="news_description_9">The Audi RS 3 is derivative of the A3 Sportback with a
+        5-cylinder, 2,480 cc (151 cu in) turbocharged engine rated at 340 PS (250 kW; 335 hp)
+        and 450 N⋅m (332 lb⋅ft), vermicular-graphite cast iron crankcase, seven-speed S tronic
+        transmission with two automatic modes and one manual mode, Quattro on-demand four-wheel
+        drive system, widened track to 1,564 mm (61.57 in), MacPherson strut in aluminum, lowered
+        body by 25 mm (0.98 in), 19-inch cast aluminum wheels in machine-polished titanium
+        styling (optional black with a red rim flange) with 235/35 front and 225/35 rear tires,
+        370 mm (14.57 in) front and 310 mm (12.20 in) ventilated brake discs, aluminum brake disk
+        covers, four-piston fixed calipers in high-gloss black with RS logos, electronic
+        stabilization program with Sport mode, flared front fenders made of carbon-fiber-reinforced
+        plastic (CFRP), prominent sill panels and exterior-mirror casings in matte aluminum, roof
+        spoiler, high-gloss black diffuser insert, two elliptical exhaust tailpipes on the left,
+        black interior, sports seats upholstered in Nappa leather with silver contrasting stitching,
+        inlays in Piano black finish or Aluminum Race colour, flat-bottomed leather multifunction
+        sports steering wheel, choice of 5 body colors are available with an unlimited selection
+        of custom paint finishes. Its acceleration is quoted as 0 to 62 mph (0 to 100 km/h) in 4.6
+        seconds, with an electronically limited top speed of 155 mph (249 km/h). Optional features
+        included front bucket seats, roof rails in matte aluminum look, styling packages in black
+        or matte aluminum.</string>
+
+    <string name="news_title_10">Audi RS 3 (2015–2020)</string>
+    <string name="news_description_10">Details for the RS 3 Sportback were revealed in December
+        2014. It went on sale in the first quarter of 2015 and featured a 2.5 litres (2,480 cc)
+        straight-5 engine with 367 PS (270 kW; 362 hp) and 465 N⋅m (343 lbf⋅ft) of torque. The RS 3
+        Sportback is equipped with 7-speed dual clutch S tronic transmission and quattro all-wheel
+        drive system. Scott Keogh of Audi of America said in April 2015 that he\'s "confident"
+        we\'ll see the car come to the United States. In 2017, the RS3 sedan or saloon was added
+        to the line-up. The RS3 can be ordered with a fixed-suspension or an adjustable magnetic
+        damper. Depending on the country, the RS3 can be purchased with different optional
+        packages. For example, the Black Optic package includes high-gloss black 19-inch wheels,
+        high-gloss black outside mirror covers, and a high-gloss black trunk lip spoiler, while
+        the Dynamic package consists of titanium 19-inch wheels with summer performance tires,
+        red brake calipers, and a sport exhaust system.</string>
+
+    <string name="news_title_11">Audi RS 3 (2020-present)</string>
+    <string name="news_description_11">The highest specification RS 3 model is fitted with a
+        2.5-litre 5-cylinder producing 400 hp (298 kW) and 500 N⋅m (369 lbf⋅ft), and has 0-60 mph
+        (97 km/h) acceleration time of just 3.8 seconds. It gets a seven-speed dual-clutch
+        automatic, or an electric S-Tronic gearbox. It also gets the new MMI infotainment system,
+        with a 10.25 or 12.3-inch digital instrument cluster, and a secondary screen of
+        10.1-inches.</string>
+
+    <string name="news_title_12">Husqvarna Motorcycles</string>
+    <string name="news_description_12">Husqvarna Motorcycles GmbH (marketed as Husqvarna) is a
+        Swedish-origin Austrian company which designs, engineers, manufactures and distributes
+        motocross, enduro, supermoto and street motorcycles. The company began producing
+        motorcycles in 1903 at Huskvarna, Sweden, as a subsidiary of the Husqvarna armament
+        firm. Today, Husqvarna Motorcycles GmbH is owned by PIERER Mobility Group.</string>
+
+    <string name="news_title_13">KTM</string>
+    <string name="news_description_13">KTM AG (Kraftfahrzeug Trunkenpolz Mattighofen, formerly KTM
+        Sportmotorcycle AG) is an Austrian motorcycle, bicycle and sports car manufacturer owned
+        by Pierer Mobility AG and Indian manufacturer Bajaj Auto International Holdings BV. It was
+        formed in 1992 but traces its foundation to as early as 1934. Today, KTM AG is the parent
+        company of the KTM Group, consisting of a number of motorcycle brands. KTM is known for
+        its off-road motorcycles (enduro, motocross and supermoto). Since the late 1990s, it has
+        expanded into street motorcycle production and developing sports cars – namely the X-Bow.
+        In 2015, KTM sold almost as many street as off-road bikes. From 2012, KTM was the largest
+        motorcycle manufacturer in Europe for four consecutive years. Globally, the company is
+        among the leading off-road motorcycle manufacturers. In 2016, KTM sold 203,423 motor
+        vehicles worldwide</string>
+
+    <string name="news_title_14">Gas Gas</string>
+    <string name="news_description_14">Gas Gas is a Spanish motorcycle manufacturer established
+        in 1985.</string>
+
+    <string name="news_title_15">Honda CRF Series</string>
+    <string name="news_description_15">The Honda CRF series is a line of four-stroke motocross,
+        trail, and dual sport motorcycles manufactured and marketed by Honda. The CRF line was
+        launched in 2000 as a successor to the Honda CR series.</string>
+</resources>
