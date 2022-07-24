@@ -2,6 +2,7 @@
     <string name="app_name">Module_2_Lesson_5_hw_2</string>
 
     <string name="title_main_news">Audi and Moto List :)</string>
+    <string name="like_number">0</string>
 
     <string name="news_title_1">Audi A3 First Generation</string>
     <string name="news_description_1">The original A3 (or Type 8L) was announced back in June 1995,
