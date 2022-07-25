@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_rv_commentslist.*
 import kotlinx.android.synthetic.main.item_rv_newslist.*
 import kotlinx.android.synthetic.main.item_rv_newslist.view.*
 
@@ -16,11 +17,12 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         setContentView(R.layout.activity_main)
 
         val newsList = getNews()
-
         rvNewsList.adapter = NewsAdapter(this, newsList,this)
         rvNewsList.layoutManager = LinearLayoutManager(this)
 
-
+        val commentsList = getComments()
+        rvCommentsList.adapter = CommentsAdapter(this, commentsList)
+        rvCommentsList.layoutManager = LinearLayoutManager(this)
 
         clViewItem.visibility = View.GONE
 
@@ -214,8 +216,6 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
             rvNewsList.adapter?.notifyItemChanged(index)
         }
 
-        val commentsList = getComments()
-        rvCommentsList.adapter = CommentsAdapter(this, commentsList)
-        rvCommentsList.layoutManager = LinearLayoutManager(this)
+
     }
 }

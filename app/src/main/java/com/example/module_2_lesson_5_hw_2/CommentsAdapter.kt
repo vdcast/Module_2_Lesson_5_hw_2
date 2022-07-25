@@ -20,6 +20,16 @@ class CommentsAdapter (val context: Context, val comments: ArrayList<Comments>) 
         holder.like.setImageBitmap(comments[position].likeImage)
         holder.dislike.setImageBitmap(comments[position].dislikeImage)
         holder.likeNumber.text = comments[position].likeNumber
+        holder.like.setOnClickListener {
+            val resultLike = Integer.parseInt(holder.likeNumber.text.toString()) + 1
+            comments[position].likeNumber = resultLike.toString()
+            holder.likeNumber.text = comments[position].likeNumber
+        }
+        holder.dislike.setOnClickListener {
+            val resultDislike = Integer.parseInt(holder.likeNumber.text.toString()) - 1
+            comments[position].likeNumber = resultDislike.toString()
+            holder.likeNumber.text = comments[position].likeNumber
+        }
     }
 
     override fun getItemCount(): Int {
