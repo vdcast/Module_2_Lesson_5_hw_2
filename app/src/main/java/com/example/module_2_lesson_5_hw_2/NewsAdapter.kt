@@ -57,6 +57,7 @@ class ViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
     val like = itemView.ivLike
     val dislike = itemView.ivDislike
     var likeNumber = itemView.tvLikeNumber
+    val pos = adapterPosition
 }
 
 interface NewsListCallBack{

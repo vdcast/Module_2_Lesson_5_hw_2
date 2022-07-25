@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="0"
+            android:text="@string/like_number"
             app:layout_constraintBottom_toBottomOf="@+id/ivDislikeViewItem"
             app:layout_constraintStart_toEndOf="@+id/ivDislikeViewItem"
             app:layout_constraintTop_toTopOf="@+id/ivDislikeViewItem" />
@@ -96,7 +96,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="@+id/tvOpenedNewsTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvOpenedNewsTitle"
-            tools:srcCompat="@drawable/ktm" />
+            tools:srcCompat="@drawable/thumbs_up_like" />
 
         <ImageView
             android:id="@+id/ivDislikeViewItem"
@@ -105,7 +105,7 @@
             android:layout_marginStart="10dp"
             app:layout_constraintStart_toEndOf="@+id/ivLikeViewItem"
             app:layout_constraintTop_toTopOf="@+id/ivLikeViewItem"
-            tools:srcCompat="@drawable/husqvarna" />
+            tools:srcCompat="@drawable/thumbs_down_dislike" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout

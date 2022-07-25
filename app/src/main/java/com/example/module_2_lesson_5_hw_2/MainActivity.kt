@@ -4,15 +4,20 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_rv_newslist.*
+import kotlinx.android.synthetic.main.item_rv_newslist.view.*
 
 class MainActivity : AppCompatActivity(), NewsListCallBack {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rvNewsList.adapter = NewsAdapter(this, getNews(),this)
+        val newsList = getNews()
+
+        rvNewsList.adapter = NewsAdapter(this, newsList,this)
         rvNewsList.layoutManager = LinearLayoutManager(this)
 
         clViewItem.visibility = View.GONE
@@ -22,6 +27,27 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
             clViewItem.visibility = View.GONE
         }
 
+        ivLikeViewItem.setOnClickListener {
+            var currentLikeNumber = Integer.parseInt(tvLikeNumberViewItem.text.toString())
+            tvLikeNumberViewItem.text = (currentLikeNumber +1).toString()
+//            rvNewsList.tvLikeNumber.text = (currentLikeNumber +1).toString()
+
+
+//            newsList[rvNewsList.id].likeNumber = (currentLikeNumber +1).toString()
+
+
+            val toaster = rvNewsList.adapter
+            Toast.makeText(this, "position $toaster", Toast.LENGTH_SHORT).show()
+
+
+//            val resultLike = Integer.parseInt(tvLikeNumberViewItem.text.toString()) + 1
+//            tvLikeNumberViewItem.text = resultLike.toString()
+//            rvNewsList.tvLikeNumber.text = resultLike.toString()
+//
+////            val resultLike = Integer.parseInt(holder.likeNumber.text.toString()) + 1
+////            holder.likeNumber.text = resultLike.toString()
+////            callBack.onLikeClickedInList(news, position)
+        }
     }
 
     private fun getNews(): ArrayList<News>{
@@ -162,9 +188,6 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         ivDislikeViewItem.setImageBitmap(news[index].dislikeImage)
         rvNewsList.visibility = View.GONE
         clViewItem.visibility = View.VISIBLE
-
-
-
     }
 
     override fun onLikeClickedInList(news: ArrayList<News>, index: Int) {
