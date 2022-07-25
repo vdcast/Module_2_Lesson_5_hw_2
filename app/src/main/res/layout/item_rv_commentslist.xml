@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/clRootItemRvNewsList"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="4dp">
 
     <ImageView
-        android:id="@+id/ivNewsAvatar"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:id="@+id/ivAvatarComments"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitStart"
@@ -18,57 +17,54 @@
         app:srcCompat="@drawable/audi_s3_2gen" />
 
     <TextView
-        android:id="@+id/tvNewsTitle"
+        android:id="@+id/tvTitleComments"
         style="@style/title_newslist_header_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="-4dp"
         android:text="Wiz Khalifa"
-        app:layout_constraintStart_toEndOf="@+id/ivNewsAvatar"
-        app:layout_constraintTop_toTopOf="@+id/ivNewsAvatar" />
+        app:layout_constraintStart_toEndOf="@+id/ivAvatarComments"
+        app:layout_constraintTop_toTopOf="@+id/ivAvatarComments" />
 
     <TextView
-        android:id="@+id/tvNewsDescription"
+        android:id="@+id/tvDescriptionComments"
         style="@style/newslist_body_text_style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="80dp"
-        android:ellipsize="end"
-        android:maxLines="3"
         android:text="Musician"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvNewsTitle"
-        app:layout_constraintTop_toBottomOf="@+id/tvNewsTitle" />
+        app:layout_constraintStart_toStartOf="@+id/tvTitleComments"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleComments" />
 
     <TextView
-        android:id="@+id/tvLikeNumber"
+        android:id="@+id/tvLikeNumberComments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/like_number"
-        app:layout_constraintEnd_toEndOf="@+id/ivDislike"
-        app:layout_constraintStart_toStartOf="@+id/ivLike"
-        app:layout_constraintTop_toBottomOf="@+id/ivLike" />
+        app:layout_constraintEnd_toEndOf="@+id/ivDislikeComments"
+        app:layout_constraintStart_toStartOf="@+id/ivLikeComments"
+        app:layout_constraintTop_toBottomOf="@+id/ivLikeComments" />
 
     <ImageView
-        android:id="@+id/ivLike"
+        android:id="@+id/ivLikeComments"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/tvNewsDescription"
-        app:layout_constraintTop_toTopOf="@+id/tvNewsDescription"
+        app:layout_constraintStart_toEndOf="@+id/tvDescriptionComments"
+        app:layout_constraintTop_toTopOf="@+id/tvDescriptionComments"
         app:srcCompat="@drawable/thumbs_up_like" />
 
     <ImageView
-        android:id="@+id/ivDislike"
+        android:id="@+id/ivDislikeComments"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivLike"
-        app:layout_constraintStart_toEndOf="@+id/ivLike"
-        app:layout_constraintTop_toTopOf="@+id/ivLike"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLikeComments"
+        app:layout_constraintStart_toEndOf="@+id/ivLikeComments"
+        app:layout_constraintTop_toTopOf="@+id/ivLikeComments"
         app:srcCompat="@drawable/thumbs_down_dislike" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

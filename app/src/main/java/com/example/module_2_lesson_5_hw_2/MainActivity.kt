@@ -20,12 +20,16 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         rvNewsList.adapter = NewsAdapter(this, newsList,this)
         rvNewsList.layoutManager = LinearLayoutManager(this)
 
+
+
         clViewItem.visibility = View.GONE
 
         btHome.setOnClickListener {
             rvNewsList.visibility = View.VISIBLE
             clViewItem.visibility = View.GONE
         }
+
+
 
     }
 
@@ -152,8 +156,37 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
             BitmapFactory.decodeResource(resources,R.drawable.thumbs_down_dislike),
             resources.getString(R.string.like_number)
         ))
-
         return news
+    }
+
+    private fun getComments(): ArrayList<Comments>{
+        val comments = ArrayList<Comments>()
+
+        comments.add(Comments(
+            BitmapFactory.decodeResource(resources,R.drawable.friends_1),
+            resources.getString(R.string.comments_title_1),
+            resources.getString(R.string.comments_description_1),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_up_like),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_down_dislike),
+            resources.getString(R.string.like_number)
+        ))
+        comments.add(Comments(
+            BitmapFactory.decodeResource(resources,R.drawable.friends_2),
+            resources.getString(R.string.comments_title_2),
+            resources.getString(R.string.comments_description_2),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_up_like),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_down_dislike),
+            resources.getString(R.string.like_number)
+        ))
+        comments.add(Comments(
+            BitmapFactory.decodeResource(resources,R.drawable.friends_3),
+            resources.getString(R.string.comments_title_3),
+            resources.getString(R.string.comments_description_3),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_up_like),
+            BitmapFactory.decodeResource(resources,R.drawable.thumbs_down_dislike),
+            resources.getString(R.string.like_number)
+        ))
+        return comments
     }
 
     override fun onItemSelected(news: ArrayList<News>, index: Int) {
@@ -164,7 +197,7 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         tvLikeNumberViewItem.text = news[index].likeNumber
         ivLikeViewItem.setImageBitmap(news[index].likeImage)
         ivDislikeViewItem.setImageBitmap(news[index].dislikeImage)
-        rvNewsList.visibility = View.GONE
+        rvNewsList.visibility = View.INVISIBLE
         clViewItem.visibility = View.VISIBLE
 
         ivLikeViewItem.setOnClickListener {
@@ -180,5 +213,9 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
             tvLikeNumberViewItem.text = news[index].likeNumber
             rvNewsList.adapter?.notifyItemChanged(index)
         }
+
+        val commentsList = getComments()
+        rvCommentsList.adapter = CommentsAdapter(this, commentsList)
+        rvCommentsList.layoutManager = LinearLayoutManager(this)
     }
 }

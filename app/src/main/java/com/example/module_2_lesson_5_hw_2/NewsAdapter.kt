@@ -22,15 +22,11 @@ class NewsAdapter(val context: Context, val news: ArrayList<News>,
         holder.likeNumber.text = news[position].likeNumber
         holder.like.setOnClickListener {
             val resultLike = Integer.parseInt(holder.likeNumber.text.toString()) + 1
-//            holder.likeNumber.text = resultLike.toString()
-//            callBack.onLikeClickedInList(news, position)
             news[position].likeNumber = resultLike.toString()
             holder.likeNumber.text = news[position].likeNumber
         }
         holder.dislike.setOnClickListener {
             val resultDislike = Integer.parseInt(holder.likeNumber.text.toString()) - 1
-//            holder.likeNumber.text = resultDislikes.toString()
-//            callBack.onDislikeClickedInList(news, position)
             news[position].likeNumber = resultDislike.toString()
             holder.likeNumber.text = news[position].likeNumber
         }
@@ -61,7 +57,6 @@ class ViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
     val like = itemView.ivLike
     val dislike = itemView.ivDislike
     var likeNumber = itemView.tvLikeNumber
-    val pos = adapterPosition
 }
 
 interface NewsListCallBack{

@@ -5,6 +5,13 @@
     <string name="like_number">0</string>
     <string name="button_home">HOME</string>
 
+    <string name="comments_title_1">Ivan Kozak</string>
+    <string name="comments_description_1">I love this car :)</string>
+    <string name="comments_title_2">Bohdan Khmelnytskyi</string>
+    <string name="comments_description_2">I wish we have this type of cars in our century.</string>
+    <string name="comments_title_3">Michael Shumakher</string>
+    <string name="comments_description_3">I\'ve driven faster car than this one.</string>
+
     <string name="news_title_1">Audi A3 First Generation</string>
     <string name="news_description_1">The original A3 (or Type 8L) was announced back in June 1995,
         but introduced first in the European market for more than year in September 1996, marking
