@@ -4,10 +4,8 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_rv_newslist.*
 
 class MainActivity : AppCompatActivity(), NewsListCallBack {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -159,8 +157,25 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         ivOpenedNewsAvatar.setImageBitmap(news[index].newsAvatar)
         tvOpenedNewsTitle.text = news[index].newsTitle
         tvOpenedNewsDescription.text = news[index].newsDescription
+        tvLikeNumberViewItem.text = news[index].likeNumber
+        ivLikeViewItem.setImageBitmap(news[index].likeImage)
+        ivDislikeViewItem.setImageBitmap(news[index].dislikeImage)
         rvNewsList.visibility = View.GONE
         clViewItem.visibility = View.VISIBLE
 
+
+
+    }
+
+    override fun onLikeClickedInList(news: ArrayList<News>, index: Int) {
+        tvLikeNumberViewItem.text = news[index].likeNumber
+        val result = Integer.parseInt(news[index].likeNumber) + 1
+        news[index].likeNumber = result.toString()
+    }
+
+    override fun onDislikeClickedInList(news: ArrayList<News>, index: Int) {
+        tvLikeNumberViewItem.text = news[index].likeNumber
+        val result = Integer.parseInt(news[index].likeNumber) - 1
+        news[index].likeNumber = result.toString()
     }
 }

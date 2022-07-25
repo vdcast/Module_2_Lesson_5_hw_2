@@ -14,29 +14,32 @@ class NewsAdapter(val context: Context, val news: ArrayList<News>,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.ivNewsAvatar.setImageBitmap(news[position].newsAvatar)
-        holder.tvNewsTitle.text = news[position].newsTitle
-        holder.tvNewsDescription.text = news[position].newsDescription
-        holder.ivLike.setImageBitmap(news[position].likeImage)
-        holder.ivDislike.setImageBitmap(news[position].dislikeImage)
-        holder.tvLikeNumber.text = news[position].likeNumber
-        holder.ivLike.setOnClickListener {
-            val resultLikePlus = Integer.parseInt(holder.tvLikeNumber.text.toString()) + 1
-            holder.tvLikeNumber.text = resultLikePlus.toString()
+        holder.newsAvatar.setImageBitmap(news[position].newsAvatar)
+        holder.newsTitle.text = news[position].newsTitle
+        holder.newsDescription.text = news[position].newsDescription
+        holder.like.setImageBitmap(news[position].likeImage)
+        holder.dislike.setImageBitmap(news[position].dislikeImage)
+        holder.likeNumber.text = news[position].likeNumber
+        holder.like.setOnClickListener {
+            val resultLike = Integer.parseInt(holder.likeNumber.text.toString()) + 1
+            holder.likeNumber.text = resultLike.toString()
+            callBack.onLikeClickedInList(news, position)
         }
-        holder.ivDislike.setOnClickListener {
-            val resultLikePlus = Integer.parseInt(holder.tvLikeNumber.text.toString()) - 1
-            holder.tvLikeNumber.text = resultLikePlus.toString()
+        holder.dislike.setOnClickListener {
+            val resultDislikes = Integer.parseInt(holder.likeNumber.text.toString()) - 1
+            holder.likeNumber.text = resultDislikes.toString()
+            callBack.onDislikeClickedInList(news, position)
         }
-        holder.ivNewsAvatar.setOnClickListener {
+        holder.newsAvatar.setOnClickListener {
             callBack.onItemSelected(news, position)
         }
-        holder.tvNewsTitle.setOnClickListener {
+        holder.newsTitle.setOnClickListener {
             callBack.onItemSelected(news, position)
         }
-        holder.tvNewsDescription.setOnClickListener {
+        holder.newsDescription.setOnClickListener {
             callBack.onItemSelected(news, position)
         }
+
 
 //        holder.newsTitle.setTextAppearance(R.style.newslist_body_text_style)
     }
@@ -48,14 +51,16 @@ class NewsAdapter(val context: Context, val news: ArrayList<News>,
 }
 
 class ViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
-    val ivNewsAvatar = itemView.ivNewsAvatar
-    val tvNewsTitle = itemView.tvNewsTitle
-    val tvNewsDescription = itemView.tvNewsDescription
-    val ivLike = itemView.ivLike
-    val ivDislike = itemView.ivDislike
-    val tvLikeNumber = itemView.tvLikeNumber
+    val newsAvatar = itemView.ivNewsAvatar
+    val newsTitle = itemView.tvNewsTitle
+    val newsDescription = itemView.tvNewsDescription
+    val like = itemView.ivLike
+    val dislike = itemView.ivDislike
+    var likeNumber = itemView.tvLikeNumber
 }
 
 interface NewsListCallBack{
     fun onItemSelected(news: ArrayList<News>, index: Int)
+    fun onLikeClickedInList(news: ArrayList<News>, index: Int)
+    fun onDislikeClickedInList(news: ArrayList<News>, index: Int)
 }
