@@ -21,15 +21,18 @@ class NewsAdapter(val context: Context, val news: ArrayList<News>,
         holder.dislikeImage.setImageBitmap(news[position].dislikeImage)
         holder.likeNumber.text = news[position].likeNumber
         holder.likeImage.setOnClickListener {
-//            callBack.onItemSelected(position)
+            callBack.onItemSelected(position)
             val resultLikePlus = Integer.parseInt(holder.likeNumber.text.toString()) + 1
             holder.likeNumber.text = resultLikePlus.toString()
         }
         holder.dislikeImage.setOnClickListener {
-//            callBack.onItemSelected(position)
+            callBack.onItemSelected(position)
             val resultLikePlus = Integer.parseInt(holder.likeNumber.text.toString()) - 1
             holder.likeNumber.text = resultLikePlus.toString()
         }
+
+
+//        holder.newsTitle.setTextAppearance(R.style.newslist_body_text_style)
     }
 
     override fun getItemCount(): Int {
