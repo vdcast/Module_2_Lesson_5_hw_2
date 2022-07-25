@@ -27,27 +27,6 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
             clViewItem.visibility = View.GONE
         }
 
-        ivLikeViewItem.setOnClickListener {
-            var currentLikeNumber = Integer.parseInt(tvLikeNumberViewItem.text.toString())
-            tvLikeNumberViewItem.text = (currentLikeNumber +1).toString()
-//            rvNewsList.tvLikeNumber.text = (currentLikeNumber +1).toString()
-
-
-//            newsList[rvNewsList.id].likeNumber = (currentLikeNumber +1).toString()
-
-
-            val toaster = rvNewsList.adapter
-            Toast.makeText(this, "position $toaster", Toast.LENGTH_SHORT).show()
-
-
-//            val resultLike = Integer.parseInt(tvLikeNumberViewItem.text.toString()) + 1
-//            tvLikeNumberViewItem.text = resultLike.toString()
-//            rvNewsList.tvLikeNumber.text = resultLike.toString()
-//
-////            val resultLike = Integer.parseInt(holder.likeNumber.text.toString()) + 1
-////            holder.likeNumber.text = resultLike.toString()
-////            callBack.onLikeClickedInList(news, position)
-        }
     }
 
     private fun getNews(): ArrayList<News>{
@@ -178,7 +157,6 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
     }
 
     override fun onItemSelected(news: ArrayList<News>, index: Int) {
-//        Toast.makeText(this,"Item selected: $index", Toast.LENGTH_SHORT).show()
 
         ivOpenedNewsAvatar.setImageBitmap(news[index].newsAvatar)
         tvOpenedNewsTitle.text = news[index].newsTitle
@@ -188,17 +166,19 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         ivDislikeViewItem.setImageBitmap(news[index].dislikeImage)
         rvNewsList.visibility = View.GONE
         clViewItem.visibility = View.VISIBLE
-    }
 
-    override fun onLikeClickedInList(news: ArrayList<News>, index: Int) {
-        tvLikeNumberViewItem.text = news[index].likeNumber
-        val result = Integer.parseInt(news[index].likeNumber) + 1
-        news[index].likeNumber = result.toString()
-    }
+        ivLikeViewItem.setOnClickListener {
+            val resultDislike = Integer.parseInt(news[index].likeNumber) + 1
+            news[index].likeNumber = resultDislike.toString()
+            tvLikeNumberViewItem.text = news[index].likeNumber
+            rvNewsList.adapter?.notifyItemChanged(index)
+        }
 
-    override fun onDislikeClickedInList(news: ArrayList<News>, index: Int) {
-        tvLikeNumberViewItem.text = news[index].likeNumber
-        val result = Integer.parseInt(news[index].likeNumber) - 1
-        news[index].likeNumber = result.toString()
+        ivDislikeViewItem.setOnClickListener {
+            val resultDislike = Integer.parseInt(news[index].likeNumber) - 1
+            news[index].likeNumber = resultDislike.toString()
+            tvLikeNumberViewItem.text = news[index].likeNumber
+            rvNewsList.adapter?.notifyItemChanged(index)
+        }
     }
 }
