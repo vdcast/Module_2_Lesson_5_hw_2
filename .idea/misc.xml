@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/111/DEV/PORTFOLIO/Module_2/Module_2_Lesson_5_hw_2/app/src/main/res/layout/activity_main.xml" value="0.37962962962962965" />
+        <entry key="..\:/111/DEV/PORTFOLIO/Module_2/Module_2_Lesson_5_hw_2/app/src/main/res/drawable/bt_bg.xml" value="0.4670995670995671" />
+        <entry key="..\:/111/DEV/PORTFOLIO/Module_2/Module_2_Lesson_5_hw_2/app/src/main/res/layout/activity_main.xml" value="0.4536796536796537" />
         <entry key="..\:/111/DEV/PORTFOLIO/Module_2/Module_2_Lesson_5_hw_2/app/src/main/res/layout/item_rv_newslist.xml" value="0.4536796536796537" />
       </map>
     </option>

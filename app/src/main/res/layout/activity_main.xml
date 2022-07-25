@@ -29,11 +29,66 @@
         android:id="@+id/rvNewsList"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/flBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flTitleMain" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clViewItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvNewsList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flTitleMain">
+
+        <ImageView
+            android:id="@+id/ivOpenedNewsAvatar"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="fitStart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/audi_s3_3gen" />
+
+        <TextView
+            android:id="@+id/tvOpenedNewsTitle"
+            style="@style/title_newslist_header_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivOpenedNewsAvatar"
+            app:layout_constraintTop_toTopOf="@+id/ivOpenedNewsAvatar" />
+
+        <TextView
+            android:id="@+id/tvOpenedNewsDescription"
+            style="@style/newslist_body_text_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ivOpenedNewsAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/ivOpenedNewsAvatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/flBottom"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/button"
@@ -41,16 +96,18 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/bt_bg"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2" />
+        app:layout_constraintEnd_toStartOf="@+id/btHome" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Button"
+        android:text="@string/button_home"
+        android:background="@drawable/bt_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -62,7 +119,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:text="Button"
+        android:background="@drawable/bt_bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/btHome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,9 +3,11 @@ package com.example.module_2_lesson_5_hw_2
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_rv_newslist.*
 
 class MainActivity : AppCompatActivity(), NewsListCallBack {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,13 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
 
         rvNewsList.adapter = NewsAdapter(this, getNews(),this)
         rvNewsList.layoutManager = LinearLayoutManager(this)
+
+        clViewItem.visibility = View.GONE
+
+        btHome.setOnClickListener {
+            rvNewsList.visibility = View.VISIBLE
+            clViewItem.visibility = View.GONE
+        }
 
     }
 
@@ -144,8 +153,14 @@ class MainActivity : AppCompatActivity(), NewsListCallBack {
         return news
     }
 
-    override fun onItemSelected(index: Int) {
+    override fun onItemSelected(news: ArrayList<News>, index: Int) {
 //        Toast.makeText(this,"Item selected: $index", Toast.LENGTH_SHORT).show()
+
+        ivOpenedNewsAvatar.setImageBitmap(news[index].newsAvatar)
+        tvOpenedNewsTitle.text = news[index].newsTitle
+        tvOpenedNewsDescription.text = news[index].newsDescription
+        rvNewsList.visibility = View.GONE
+        clViewItem.visibility = View.VISIBLE
 
     }
 }
