@@ -5,7 +5,7 @@ RecyclerView.
 
 **Technical task:**
 
-Take the list of news from an previous task.
+Take the list of news from previous task.
 
 Add a counter for the number of likes, the ability to put / remove a like (the number of likes should change).
 
