@@ -3,7 +3,7 @@
 
 RecyclerView.
 
-**Technical task:**
+**Task:**
 
 Take the list of news from previous task.
 
